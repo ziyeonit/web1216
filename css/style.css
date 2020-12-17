@@ -29,6 +29,8 @@ img{border:none;}
 .disN{ display: none;}
 .disIB{ display: inline-block;}
 
+/* 애니메이션불가 display */
+
 /*imspector(검수용 스타일은 스타일을 아주 구체적으로 + !important 까지 무조건 넣어주기)*/
 .red{border-bottom:red 1px solid !important; }
 
@@ -51,5 +53,6 @@ padding-bottom: 15px; background: yellow;
 #gnb li:nth-child(4) .d2{ width:70px}
 
 #gnb > li:hover .d2{display: block; height: 120px;}
+
 section#main{}
 footer#fd{}
