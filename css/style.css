@@ -36,8 +36,11 @@ img{border:none;}
 header#hd{ padding: 15px 0;}
   /*프로 흉내내기!!*/
 #hd a, #hd img{display: block}
+#gnb > li{ background: green; height: 46px;}
 #gnb > li > a{font-size: 18px;
-font-weight: bold; line-height: 46px; margin-left:2em;}
+font-weight: bold; line-height: 46px; padding-left:2em;
+padding-bottom: 15px; background: yellow;
+}
 #gnb .d2{display: none;
   background-color: black; top:calc(100% + 15px); left:15px; padding:10px 15px; width:100px}
 #gnb .d2 a {font-size: 0.9em; line-height: 1.5;  color:white;}
