@@ -29,7 +29,7 @@ img{border:none;}
 .disN{ display: none;}
 .disIB{ display: inline-block;}
 
-/* 애니메이션불가 display */
+/* 애니메이션불가 display 값 auto인 것 --> keyframes도 안된다는 뜻 */
 
 /*imspector(검수용 스타일은 스타일을 아주 구체적으로 + !important 까지 무조건 넣어주기)*/
 .red{border-bottom:red 1px solid !important; }
@@ -51,12 +51,14 @@ padding-bottom: 15px;
   height: 0; transition: 0.5s; overflow: hidden;
 }
 #gnb .d2 a {font-size: 0.9em; line-height: 1.5;  color:white;}
+#gnb .d2:before{ content: ""; display: block; height: 15px;}
 
 #gnb li:nth-child(1) .d2{ left:30px;}
 #gnb li:nth-child(4) .d2{ width:70px}
 
 /* 마우스가 올라간 대메뉴 li 속 소메뉴 .d2의 높이가 120이 되라 */
 #gnb > li:hover .d2{display: block; height: 120px;}
+/* 마우스가 올라간 대메뉴 li 속 대메뉴 a의 색상 처리 */
 #gnb > li:hover > a{color:#009688}
 
 section#main{}
