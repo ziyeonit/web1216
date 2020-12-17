@@ -38,10 +38,13 @@ img{border:none;}
 header#hd{ padding: 15px 0;}
   /*프로 흉내내기!!*/
 #hd a, #hd img{display: block}
-#gnb > li{ background: green; height: 46px;}
+#gnb > li{
+  /* background: green;  */
+  height: 46px;}
 #gnb > li > a{font-size: 18px;
 font-weight: bold; line-height: 46px; padding-left:2em;
-padding-bottom: 15px; background: yellow;
+padding-bottom: 15px;
+/* background: yellow; */
 }
 #gnb .d2{
   background-color: black; top:calc(100% + 15px); left:15px; padding:0 15px; width:100px;
@@ -52,7 +55,9 @@ padding-bottom: 15px; background: yellow;
 #gnb li:nth-child(1) .d2{ left:30px;}
 #gnb li:nth-child(4) .d2{ width:70px}
 
+/* 마우스가 올라간 대메뉴 li 속 소메뉴 .d2의 높이가 120이 되라 */
 #gnb > li:hover .d2{display: block; height: 120px;}
+#gnb > li:hover > a{color:#009688}
 
 section#main{}
 footer#fd{}
